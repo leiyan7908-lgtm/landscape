@@ -1,0 +1,103 @@
+* CSS RESET - Remove browser default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* BASE STYLES */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+/* HEADER STYLES */
+.main-header {
+background-color: #000;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.main-header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo img {
+height: 40px;
+}
+/* NAVIGATION STYLES */
+.navigation ul {
+display: flex;
+list-style: none;
+gap: 30px;
+}
+.navigation a {
+color: #999;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 1px;
+transition: color 0.3s ease;
+}
+.navigation a:hover {
+color: #fff;
+}
+/* BUTTON STYLES */
+.cta-button {
+background-color: #9ACD32;
+color: #000;
+border: none;
+padding: 12px 25px;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+background-color: #7DB428;
+}
+/* HERO SECTION STYLES */
+.hero {
+    background-image: url('images/hero-flowers.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+/* Dark overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-subtitle {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
