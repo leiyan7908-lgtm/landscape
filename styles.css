@@ -152,3 +152,76 @@ height: 300px;
 object-fit: cover;
 border-radius: 8px;
 }
+/* FOOTER STYLES */
+.site-footer {
+background-color: #1a1a1a;
+color: white;
+padding: 60px 0 20px;
+}
+.footer-content {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+margin-bottom: 40px;
+}
+.footer-column {
+flex: 1;
+}
+.footer-logo {
+height: 50px;
+margin-bottom: 20px;
+}
+.phone {
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.address {
+color: #999;
+line-height: 1.6;
+}
+.footer-column h3 {
+color: #9ACD32;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.footer-column ul {
+list-style: none;
+}
+.footer-column ul li {
+margin-bottom: 10px;
+🔍
+ Footer Styling Breakdown:
+background-color: #1a1a1a; - Very dark gray (not pure black)
+display: flex; - Creates columns side-by-side
+justify-content: space-between; - Distributes columns evenly
+border-top: 1px solid #333; - Thin line above copyright
+Hover Effects: All links transition to yellow-green on hover for consistency with the brand color scheme.
+🎉
+ FINAL TEST!
+1. Save all files (Ctrl + S)
+2. Refresh your Live Server browser
+3. Your page should now be fully styled!
+4. Test all hover effects (navigation, buttons, links)
+5. Scroll the page - the header should stick to the top
+Don't worry if images are broken - you'll add them later!
+12. Git Workflow & Commits
+Understanding Git Workflow
+Git helps you save "checkpoints" of your work. Think of it like saving a game - you can always go back to a
+previous save!
+}
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-column a:hover {
+    color: #9ACD32;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
